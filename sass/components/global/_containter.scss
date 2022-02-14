@@ -24,8 +24,23 @@
 }
 
 .container__footer {
-  @media screen and (min-width: 768px) {
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: 1200px) {
     display: flex;
     align-items: baseline;
+  }
+}
+
+.container__tablet-wrapper {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    justify-content: space-around;
+    margin-bottom: 60px;
   }
 }
