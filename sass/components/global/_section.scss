@@ -1,0 +1,25 @@
+.section {
+  padding-top: $main-section-padding;
+  padding-bottom: $main-section-padding;
+}
+
+.section--no-padding-top {
+  padding-top: 0;
+  display: none;
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
+}
+
+.section--grey-bg {
+  background-color: $second-background-color;
+}
+
+.section__title {
+  font-weight: $font-weight-first;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  margin-bottom: $main-margin-bottom;
+}

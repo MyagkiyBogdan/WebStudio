@@ -1,0 +1,9 @@
+.mobile-menu-wrapper {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+  }
+}
