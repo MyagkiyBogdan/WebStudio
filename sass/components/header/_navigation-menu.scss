@@ -29,6 +29,7 @@
   &:focus {
     color: $accent-text-color;
   }
+
   @media screen and (max-width: 767px) {
     font-size: 40px;
     line-height: 1.17px;
@@ -61,22 +62,24 @@
 .navigation-menu__link--hover {
   position: relative;
 
-  &::after {
-    position: absolute;
-    right: 0;
-    bottom: 20px;
-    content: '';
-    display: block;
-    width: 0%;
-    height: 2px;
-    background-color: $accent-text-color;
-    border-radius: 2px;
-    transition: width 0.5s, left 0.5s;
-  }
+  @media screen and (min-width: 768px) {
+    &::after {
+      position: absolute;
+      right: 0;
+      bottom: 20px;
+      content: '';
+      display: block;
+      width: 0%;
+      height: 2px;
+      background-color: $accent-text-color;
+      border-radius: 2px;
+      transition: width 0.5s, left 0.5s;
+    }
 
-  &:hover::after,
-  &:focus::after {
-    width: 100%;
-    left: 0;
+    &:hover::after,
+    &:focus::after {
+      width: 100%;
+      left: 0;
+    }
   }
 }

@@ -701,22 +701,24 @@ ul {
 .navigation-menu__link--hover {
   position: relative;
 }
-.navigation-menu__link--hover::after {
-  position: absolute;
-  right: 0;
-  bottom: 20px;
-  content: "";
-  display: block;
-  width: 0%;
-  height: 2px;
-  background-color: #2196f3;
-  border-radius: 2px;
-  -webkit-transition: width 0.5s, left 0.5s;
-  transition: width 0.5s, left 0.5s;
-}
-.navigation-menu__link--hover:hover::after, .navigation-menu__link--hover:focus::after {
-  width: 100%;
-  left: 0;
+@media screen and (min-width: 768px) {
+  .navigation-menu__link--hover::after {
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+    content: "";
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color: #2196f3;
+    border-radius: 2px;
+    -webkit-transition: width 0.5s, left 0.5s;
+    transition: width 0.5s, left 0.5s;
+  }
+  .navigation-menu__link--hover:hover::after, .navigation-menu__link--hover:focus::after {
+    width: 100%;
+    left: 0;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -767,22 +769,24 @@ ul {
 .contact-list__link:hover, .contact-list__link:focus {
   color: #2196f3;
 }
-.contact-list__link::after {
-  position: absolute;
-  right: 0;
-  bottom: 20px;
-  content: "";
-  display: block;
-  width: 0%;
-  height: 2px;
-  background-color: #2196f3;
-  border-radius: 2px;
-  -webkit-transition: width 0.5s, left 0.5s;
-  transition: width 0.5s, left 0.5s;
-}
-.contact-list__link:hover::after, .contact-list__link:focus::after {
-  width: 100%;
-  left: 0;
+@media screen and (min-width: 1200px) {
+  .contact-list__link::after {
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+    content: "";
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color: #2196f3;
+    border-radius: 2px;
+    -webkit-transition: width 0.5s, left 0.5s;
+    transition: width 0.5s, left 0.5s;
+  }
+  .contact-list__link:hover::after, .contact-list__link:focus::after {
+    width: 100%;
+    left: 0;
+  }
 }
 @media screen and (max-width: 767px) {
   .contact-list__link {
