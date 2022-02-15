@@ -16,48 +16,82 @@
   <body>
     <header class="header">
       <div class="container container__header">
-        <nav class="page-navigation">
-          <a href="./index.html" class="logo header__logo animate-heartbeat"
-            ><span class="logo__word">Web</span>Studio</a
-          >
-          <ul class="navigation-menu navigation-menu--margin-left">
-            <li class="navigation-menu__item">
-              <a href="./index.html" class="navigation-menu__link navigation-menu__link--hover"
-                >Студия
-              </a>
-            </li>
-            <li class="navigation-menu__item">
-              <a
-                href="./portfiolio.html"
-                class="navigation-menu__link navigation-menu__link--current"
-                >Портфолио
-              </a>
-            </li>
-            <li class="navigation-menu__item">
-              <a href="#contacts" class="navigation-menu__link navigation-menu__link--hover"
-                >Контакты
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <ul class="contact-list header__contact-list">
-          <li class="contact-list__item">
-            <a href="mailto:info@devstudio.com" class="contact-list__link">
-              <svg class="contact-list__mail-icon">
-                <use href="./images/icons.svg#icon-mail"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="contact-list__item">
-            <a href="tel:+380961111111" class="contact-list__link">
-              <svg class="contact-list__tel-icon">
-                <use href="./images/icons.svg#icon-tel"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+        <a href="./index.html" class="logo header__logo animate-heartbeat"
+          ><span class="logo__word">Web</span>Studio</a
+        >
+        <div class="mobile-menu-wrapper" data-menu>
+          <nav class="page-navigation">
+            <ul class="navigation-menu navigation-menu--margin-left">
+              <li class="navigation-menu__item">
+                <a href="./index.html" class="navigation-menu__link navigation-menu__link--hover"
+                  >Студия
+                </a>
+              </li>
+              <li class="navigation-menu__item">
+                <a
+                  href="./portfiolio.html"
+                  class="navigation-menu__link navigation-menu__link--current"
+                  >Портфолио
+                </a>
+              </li>
+              <li class="navigation-menu__item">
+                <a href="#contacts" class="navigation-menu__link navigation-menu__link--hover"
+                  >Контакты
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="mobile-menu-wrapper__adaptive">
+            <ul class="contact-list header__contact-list">
+              <li class="contact-list__item">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="contact-list__link contact-list__link--mobile-accent"
+                >
+                  <svg class="contact-list__mail-icon">
+                    <use href="./images/icons.svg#icon-mail"></use>
+                  </svg>
+                  info@devstudio.com
+                </a>
+              </li>
+              <li class="contact-list__item">
+                <a href="tel:+380961111111" class="contact-list__link">
+                  <svg class="contact-list__tel-icon">
+                    <use href="./images/icons.svg#icon-tel"></use>
+                  </svg>
+                  +38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+
+            <ul class="mobile-media">
+              <li class="mobile-media__item">
+                <a href="https://www.instagram.com/" class="mobile-media__link">Instagram</a>
+              </li>
+              <li class="mobile-media__item">
+                <a href="https://twitter.com/" class="mobile-media__link">Twitter</a>
+              </li>
+              <li class="mobile-media__item">
+                <a href="https://www.facebook.com/" class="mobile-media__link">Facebook</a>
+              </li>
+              <li class="mobile-media__item">
+                <a href="https://www.linkedin.com/" class="mobile-media__link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <button
+          type="button"
+          class="mobile-btn"
+          aria-label="Переключать мобильного меню"
+          aria-expanded="false"
+          data-menu-button
+        >
+          <svg width="40" height="40">
+            <use class="mobile-btn__burger" href="./images/icons.svg#icon-burger"></use>
+            <use class="mobile-btn__close" href="./images/icons.svg#icon-modal-close"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -302,60 +336,62 @@
     </main>
     <footer class="footer">
       <div class="container container__footer">
-        <div class="contacts-wrap">
-          <a href="./index.html" class="footer__logo logo animate-heartbeat"
-            ><span class="logo__word">Web</span>Studio</a
-          >
-          <address id="contacts" class="contacts-block">
-            <ul class="contacts-block__list">
-              <li class="contacts-block__item">
-                <a href="" class="contacts-block__link contacts-block__link--white"
-                  >г. Киев, пр-т Леси Украинки, 26
+        <div class="container__tablet-wrapper">
+          <div class="contacts-wrap">
+            <a href="./index.html" class="footer__logo logo animate-heartbeat"
+              ><span class="logo__word">Web</span>Studio</a
+            >
+            <address id="contacts" class="contacts-block">
+              <ul class="contacts-block__list">
+                <li class="contacts-block__item">
+                  <a href="" class="contacts-block__link contacts-block__link--white"
+                    >г. Киев, пр-т Леси Украинки, 26
+                  </a>
+                </li>
+                <li class="contacts-block__item">
+                  <a href="mailto:info@devstudio.com" class="contacts-block__link"
+                    >info@devstudio.com
+                  </a>
+                </li>
+                <li class="contacts-block__item">
+                  <a href="tel:+380961111111" class="contacts-block__link">+38 096 111 11 11 </a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="media-footer">
+            <p class="media-footer__text">присоединяйтесь</p>
+            <ul class="media-list">
+              <li class="media__item">
+                <a class="media__link media__link--gray-bg" href="https://www.instagram.com/">
+                  <svg class="media__icon media__icon--white">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
                 </a>
               </li>
-              <li class="contacts-block__item">
-                <a href="mailto:info@devstudio.com" class="contacts-block__link"
-                  >info@devstudio.com
+              <li class="media__item">
+                <a class="media__link media__link--gray-bg" href="https://twitter.com/">
+                  <svg class="media__icon media__icon--white">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
                 </a>
               </li>
-              <li class="contacts-block__item">
-                <a href="tel:+380961111111" class="contacts-block__link">+38 096 111 11 11 </a>
+              <li class="media__item">
+                <a class="media__link media__link--gray-bg" href="https://www.facebook.com/">
+                  <svg class="media__icon media__icon--white">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="media__item">
+                <a class="media__link media__link--gray-bg" href="https://www.linkedin.com/">
+                  <svg class="media__icon media__icon--white">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div class="media-footer">
-          <p class="media-footer__text">присоединяйтесь</p>
-          <ul class="media-list">
-            <li class="media__item">
-              <a class="media__link media__link--gray-bg" href="https://www.instagram.com/">
-                <svg class="media__icon media__icon--white">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="media__item">
-              <a class="media__link media__link--gray-bg" href="https://twitter.com/">
-                <svg class="media__icon media__icon--white">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="media__item">
-              <a class="media__link media__link--gray-bg" href="https://www.facebook.com/">
-                <svg class="media__icon media__icon--white">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="media__item">
-              <a class="media__link media__link--gray-bg" href="https://www.linkedin.com/">
-                <svg class="media__icon media__icon--white">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
         <form class="subscribe-mail subscribe-mail--right" name="footer_mail">
           <label for="footer-mail-input" class="subscribe-mail__label"
@@ -379,5 +415,6 @@
         </form>
       </div>
     </footer>
+    <script src="./js/burger.js"></script>
   </body>
 </html>

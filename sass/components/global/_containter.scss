@@ -17,9 +17,11 @@
 }
 
 .container__header {
+  position: relative;
   display: flex;
   @media screen and (max-width: 767px) {
     justify-content: space-between;
+    width: auto;
   }
 }
 
