@@ -161,13 +161,17 @@
           <h2 class="section__title">Чем мы занимаемся</h2>
           <ul class="about">
             <li class="about__item">
-              <img
-                src="./images/main-page/about-us-1.jpg"
-                alt="Процесс написания кода"
-                width="370"
-                height="294"
-                class="about__img"
-              />
+                <img
+									srcset="
+                    ./images/main-page/about-us-1-370.jpg 370w,
+                    ./images/main-page/about-us-1-740.jpg 740w
+                  "
+                  sizes="370px"
+                  src="./images/main-page/about-us-1-370.jpg"
+                  alt="Процесс написания кода"
+                  class="about__img"
+                />
+              </picture>
               <div class="about__tumb">
                 <h3 class="about__title">Десктопные приложения</h3>
                 <p class="about__text">
@@ -178,10 +182,13 @@
             </li>
             <li class="about__item">
               <img
-                src="./images/main-page/about-us-2.jpg"
+								  	srcset="
+                    ./images/main-page/about-us-2-370.jpg 370w,
+                    ./images/main-page/about-us-2-740.jpg 740w
+                  "
+                  sizes="370px"
+                  src="./images/main-page/about-us-2-370.jpg"
                 alt="Процесс представления промежуточного продукта"
-                width="370"
-                height="294"
                 class="about__img"
               />
               <div class="about__tumb">
@@ -194,10 +201,13 @@
             </li>
             <li class="about__item">
               <img
-                src="./images/main-page/about-us-3.jpg"
+								  	srcset="
+                    ./images/main-page/about-us-3-370.jpg 370w,
+                    ./images/main-page/about-us-3-740.jpg 740w
+                  "
+                  sizes="370px"
+                  src="./images/main-page/about-us-3-370.jpg"
                 alt="Процесс выбора rgb цвета"
-                width="370"
-                height="294"
                 class="about__img"
               />
               <div class="about__tumb">
@@ -210,6 +220,7 @@
           </ul>
         </div>
       </section>
+      <!-- Team Section -->
       <section class="section section--grey-bg">
         <div class="container">
           <h2 class="section__title">Наша команда</h2>
@@ -218,7 +229,16 @@
               <div class="team-card__scene">
                 <div class="team-card">
                   <img
-                    src="./images/main-page/our-team-1.jpg"
+                    srcset="
+                      ./images/main-page/team-member-1-270-desk.jpg   270w,
+                      ./images/main-page/team-member-1-540-desk.jpg   540w,
+                      ./images/main-page/team-member-1-354-tablet.jpg 354w,
+                      ./images/main-page/team-member-1-708-tablet.jpg 708w,
+                      ./images/main-page/team-member-1-450-mobile.jpg 450w,
+                      ./images/main-page/team-member-1-900-mobile.jpg 900w
+                    "
+                    sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 450px"
+                    src="./images/main-page/team-member-1-270-desk.jpg"
                     alt="Фото Игоря Демьяненко"
                     class="team__img team-card__face"
                   />
@@ -270,12 +290,20 @@
               <div class="team-card__scene">
                 <div class="team-card">
                   <img
-                    src="./images/main-page/our-team-2.jpg"
+                    srcset="
+                      ./images/main-page/team-member-2-270-desk.jpg   270w,
+                      ./images/main-page/team-member-2-540-desk.jpg   540w,
+                      ./images/main-page/team-member-2-354-tablet.jpg 354w,
+                      ./images/main-page/team-member-2-708-tablet.jpg 708w,
+                      ./images/main-page/team-member-2-450-mobile.jpg 450w,
+                      ./images/main-page/team-member-2-900-mobile.jpg 900w
+                    "
+                    sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 450px"
+                    src="./images/main-page/team-member-2-270-desk.jpg"
                     alt="Фото Ольги Репиной"
-                    width="270"
-                    height="260"
                     class="team__img team-card__face"
                   />
+
                   <div class="team-card__face team-card__back">
                     <h3 class="team-card__title-back">Современные технологии</h3>
                     <p class="team-card__text-back">
@@ -325,10 +353,17 @@
               <div class="team-card__scene">
                 <div class="team-card">
                   <img
-                    src="./images/main-page/our-team-3.jpg"
+                    srcset="
+                      ./images/main-page/team-member-3-270-desk.jpg   270w,
+                      ./images/main-page/team-member-3-540-desk.jpg   540w,
+                      ./images/main-page/team-member-3-354-tablet.jpg 354w,
+                      ./images/main-page/team-member-3-708-tablet.jpg 708w,
+                      ./images/main-page/team-member-3-450-mobile.jpg 450w,
+                      ./images/main-page/team-member-3-900-mobile.jpg 900w
+                    "
+                    sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 450px"
+                    src="./images/main-page/team-member-3-270-desk.jpg"
                     alt="Фото Николая Тарасова"
-                    width="270"
-                    height="260"
                     class="team__img team-card__face"
                   />
                   <div class="team-card__face team-card__back">
@@ -380,10 +415,17 @@
               <div class="team-card__scene">
                 <div class="team-card">
                   <img
-                    src="./images/main-page/our-team-4.jpg"
+                    srcset="
+                      ./images/main-page/team-member-4-270-desk.jpg   270w,
+                      ./images/main-page/team-member-4-540-desk.jpg   540w,
+                      ./images/main-page/team-member-4-354-tablet.jpg 354w,
+                      ./images/main-page/team-member-4-708-tablet.jpg 708w,
+                      ./images/main-page/team-member-4-450-mobile.jpg 450w,
+                      ./images/main-page/team-member-4-900-mobile.jpg 900w
+                    "
+                    sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 450px"
+                    src="./images/main-page/team-member-4-270-desk.jpg"
                     alt="Фото Михаила Ермакова"
-                    width="270"
-                    height="260"
                     class="team__img team-card__face"
                   />
                   <div class="team-card__face team-card__back">
@@ -628,6 +670,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
-    <script src="./js/burger.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
