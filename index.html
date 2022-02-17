@@ -21,7 +21,7 @@
         >
         <div class="mobile-menu-wrapper" data-menu>
           <nav class="page-navigation">
-            <ul class="navigation-menu navigation-menu--margin-left">
+            <ul class="navigation-menu">
               <li class="navigation-menu__item">
                 <a href="./index.html" class="navigation-menu__link navigation-menu__link--current"
                   >Студия
@@ -87,7 +87,7 @@
           aria-expanded="false"
           data-menu-button
         >
-          <svg width="40" height="40">
+          <svg width="24" height="24">
             <use class="mobile-btn__burger" href="./images/icons.svg#icon-burger"></use>
             <use class="mobile-btn__close" href="./images/icons.svg#icon-modal-close"></use>
           </svg>
@@ -161,17 +161,16 @@
           <h2 class="section__title">Чем мы занимаемся</h2>
           <ul class="about">
             <li class="about__item">
-                <img
-									srcset="
-                    ./images/main-page/about-us-1-370.jpg 370w,
-                    ./images/main-page/about-us-1-740.jpg 740w
-                  "
-                  sizes="370px"
-                  src="./images/main-page/about-us-1-370.jpg"
-                  alt="Процесс написания кода"
-                  class="about__img"
-                />
-              </picture>
+              <img
+                srcset="
+                  ./images/main-page/about-us-1-370.jpg 370w,
+                  ./images/main-page/about-us-1-740.jpg 740w
+                "
+                sizes="370px"
+                src="./images/main-page/about-us-1-370.jpg"
+                alt="Процесс написания кода"
+                class="about__img"
+              />
               <div class="about__tumb">
                 <h3 class="about__title">Десктопные приложения</h3>
                 <p class="about__text">
@@ -182,12 +181,12 @@
             </li>
             <li class="about__item">
               <img
-								  	srcset="
-                    ./images/main-page/about-us-2-370.jpg 370w,
-                    ./images/main-page/about-us-2-740.jpg 740w
-                  "
-                  sizes="370px"
-                  src="./images/main-page/about-us-2-370.jpg"
+                srcset="
+                  ./images/main-page/about-us-2-370.jpg 370w,
+                  ./images/main-page/about-us-2-740.jpg 740w
+                "
+                sizes="370px"
+                src="./images/main-page/about-us-2-370.jpg"
                 alt="Процесс представления промежуточного продукта"
                 class="about__img"
               />
@@ -201,12 +200,12 @@
             </li>
             <li class="about__item">
               <img
-								  	srcset="
-                    ./images/main-page/about-us-3-370.jpg 370w,
-                    ./images/main-page/about-us-3-740.jpg 740w
-                  "
-                  sizes="370px"
-                  src="./images/main-page/about-us-3-370.jpg"
+                srcset="
+                  ./images/main-page/about-us-3-370.jpg 370w,
+                  ./images/main-page/about-us-3-740.jpg 740w
+                "
+                sizes="370px"
+                src="./images/main-page/about-us-3-370.jpg"
                 alt="Процесс выбора rgb цвета"
                 class="about__img"
               />
@@ -658,10 +657,10 @@
                 id="modal-check-box"
               />
               <span class="registration-form__check-icon"> </span>
-              <div class="registration-form__check-wrapper">
+              <span class="registration-form__check-wrapper">
                 <span class="registration-form__check-text">Соглашаюсь с рассылкой и принимаю</span>
                 <a class="registration-form__check-link" href="">Условия договора</a>
-              </div></label
+              </span></label
             >
           </div>
           <button class="main-btn main-btn--modal" type="submit">Отправить</button>

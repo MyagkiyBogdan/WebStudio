@@ -21,7 +21,7 @@
   display: flex;
   @media screen and (max-width: 767px) {
     justify-content: space-between;
-    width: auto;
+    // width: auto;
   }
 }
 
@@ -37,6 +37,10 @@
 }
 
 .container__tablet-wrapper {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+
   @media screen and (min-width: 768px) {
     display: flex;
   }

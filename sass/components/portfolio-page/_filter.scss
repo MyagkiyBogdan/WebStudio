@@ -1,31 +1,27 @@
 .filter {
   display: flex;
   justify-content: center;
+  margin-top: -15px;
   @media screen and (max-width: 767px) {
     flex-wrap: wrap;
     justify-content: start;
-    @media screen and (max-width: 767px) {
-      margin: -8px;
-    }
   }
 }
 
 .filter--margin-bottom {
-  margin-bottom: $main-margin-bottom;
-
-  @media screen and (max-width: 767px) {
-    margin-bottom: 42px;
+  margin-bottom: 40px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: $main-margin-bottom;
   }
 }
 
 .filter__item {
-  @media screen and (max-width: 767px) {
-    margin: 8px;
-  }
-  @media screen and (min-width: 768px) {
-    &:not(:last-child) {
-      margin-right: 8px;
-    }
+  margin-top: 15px;
+  &:not(:last-child) {
+    margin-right: 8px;
   }
 }
 .filter__btn {

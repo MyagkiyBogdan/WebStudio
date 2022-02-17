@@ -8,10 +8,9 @@
   border-radius: 4px;
   transition: transform $main-transition-settings;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 600px) {
     min-width: 528px;
     min-height: 581px;
-
     position: absolute;
     top: 50%;
     left: 50%;

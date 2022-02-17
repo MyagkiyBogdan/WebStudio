@@ -10,7 +10,7 @@
   transition: opacity $main-transition-settings, visibility $main-transition-settings;
 
   @media screen and (max-width: 768px) {
-    padding: 93px 15px;
+    padding: 15px;
     overflow-y: scroll;
   }
 }
