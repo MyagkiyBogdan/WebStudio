@@ -1,1 +1,3 @@
-# goit-markup-hw-08
+# A responsive Website of WebStudio
+
+(HTML5, CSS, SASS, BEM, Flexbox, Adaptive images)
